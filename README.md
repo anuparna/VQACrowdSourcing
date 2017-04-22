@@ -10,4 +10,4 @@ A crowd-sourcing experiment was conducted on **Amazon Mechanical Turk (AMT)** wi
 ## Setup
 `Split_Questions_Answers.py`: A Python script used to generate `.input` files for AMT. This script currently uses VizWiz dataset.
 `\data\input\*.input`: The `.input` files used to feed AMT
-
+`\data\images`: The image files from all 3 datasets - Total of 144 images, 48 from each dataset
