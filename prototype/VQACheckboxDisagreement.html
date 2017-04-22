@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Visual Question Answering Task</title>
+		<link rel="stylesheet" type="text/css" href="theme.css">
+		
+	</head>
+	<body>
+		<form name="VQADisagreement" id="VQADisagreement" method="POST" action="http://www.mturk.com/mturk/externalSubmit">
+		<input type="hidden" id="assignmentId" name="assignmentId" value=""/>
+		<h4><u>Visual Question Answering Task</u></h4>
+		<p>There are four different images in this page.<br />
+		The question about the image appears on top and on the left are responses collected from 10 different crowd workers.<br />  
+		These responses may or may not overlap.<br />  
+		There is comment box on the bottom of the page.  <br/>
+		We appreciate all types of feedback from you.<br/>
+<br/>
+		Please follow the steps as mentioned below.</p>
+		<ol>
+			<li>For each image, there are six options on the bottom of the image accompanied by definition in a '+' collapsible panel.</li>
+			<li>Please read the question and responses and help us select all applicable options for each image.</li>
+			<li>You must select <b>at least one option that describes the reason for disagreement among crowd workers</b> from these option  lists.</li>
+			<li>If you do not agree on any options, please select the <b>closest option</b> that describes why there is crowd disagreement.</li>
+		</ol>
+		<table class="style1">
+		<tr>
+			<th colspan=2>Visual Question Answers</th>
+		</tr>
+		<tr>   
+			<td> 
+			<table class="style2"> 
+			<tr>
+				<td colspan="2">
+					<h3 id="q1"></h3>
+					<input type="hidden" id="img1" name="img1"/>
+				</td>
+			</tr>
+			<tr>
+				<td width="40%"><h4 id="a1"></h4></td>
+				<td width="60%"><img id="i1"/></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<table>
+				<tr>
+				<td> 
+			 		<input type="checkbox" name="reason1" value="TD"><label class="reason">Task Difficulty</label>
+  			 	</td>
+				<td>
+					<input type="checkbox" name="reason1" value="A"><label class="reason">Ambiguity</label>
+  			 	</td>
+				<td>
+					<input type="checkbox" name="reason1" value="G"><label class="reason">Granularity</label>
+				</td>
+				</tr>
+				<tr>		
+				<td> 
+			 		<input type="checkbox" name="reason1" value="SU"><label class="reason">Subjectivity</label>
+  			 	</td>
+				<td>
+					<input type="checkbox" name="reason1" value="IVE"><label class="reason">Insufficient Visual Evidence</label>
+  			 	</td>
+				<td>	
+					<input type="checkbox" name="reason1" value="SY"><label class="reason">Synonym</label>
+				</td>
+				</tr>
+				</table>
+				</td>
+			</tr>
+			</table>
+			</td>
+                
+			<td> 
+			<table class="style2">
+			<tr>
+				<td colspan="2">
+					<h3 id="q2"></h3>
+					<input type="hidden" id="img2" name="img2"/>
+				</td>
+			</tr>
+			<tr>
+				<td width="40%"><h4 id="a2"></h4></td>
+				<td width="60%"><img id="i2"/></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<table>
+				<tr>
+				<td> 
+			 		<input type="checkbox" name="reason2" value="TD"><label class="reason">Task Difficulty</label>
+  			 	</td>
+				<td>
+					<input type="checkbox" name="reason2" value="A"><label class="reason">Ambiguity</label>
+  			 	</td>
+				<td>
+					<input type="checkbox" name="reason2" value="G"><label class="reason">Granularity</label>
+				</td>
+				</tr>
+				<tr>		
+				<td> 
+			 		<input type="checkbox" name="reason2" value="SU"><label class="reason">Subjectivity</label>
+  			 	</td>
+				<td>
+					<input type="checkbox" name="reason2" value="IVE"><label class="reason">Insufficient Visual Evidence</label>
+  			 	</td>
+				<td>	
+					<input type="checkbox" name="reason2" value="SY"><label class="reason">Synonym</label>
+				</td>
+				</tr>
+				</table>
+				</td>
+			</tr>
+
+			</table>
+			</td>				
+		</tr>
+		
+		
+		<tr>	
+			<tr>   
+			<td> 
+			<table class="style2">
+			<tr>
+				<td colspan="2">
+					<h3 id="q3"></h3>
+					<input type="hidden" id="img3" name="img3"/>
+				</td>
+			</tr>
+			<tr>
+				<td width="40%"><h4 id="a3"></h4></td>
+				<td width="60%"><img id="i3"/></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<table>
+				<tr>
+				<td> 
+			 		<input type="checkbox" name="reason3" value="TD"><label class="reason">Task Difficulty</label>
+  			 	</td>
+				<td>
+					<input type="checkbox" name="reason3" value="A"><label class="reason">Ambiguity</label>
+  			 	</td>
+				<td>
+					<input type="checkbox" name="reason3" value="G"><label class="reason">Granularity</label>
+				</td>
+				</tr>
+				<tr>		
+				<td> 
+			 		<input type="checkbox" name="reason3" value="SU"><label class="reason">Subjectivity</label>
+  			 	</td>
+				<td>
+					<input type="checkbox" name="reason3" value="IVE"><label class="reason">Insufficient Visual Evidence</label>
+  			 	</td>
+				<td>	
+					<input type="checkbox" name="reason3" value="SY"><label class="reason">Synonym</label>
+				</td>
+				</tr>
+				</table>
+				</td>
+			</tr>
+			</table>
+			</td>
+                
+			<td> 
+			<table class="style2">
+			<tr>
+				<td colspan="2">
+					<h3 id="q4"></h3>
+					<input type="hidden" id="img4" name="img4"/>
+				</td>
+			</tr>
+			<tr>
+				<td width="40%"><h4 id="a4"></h4></td> 
+				<td width="60%"><img id="i4"/></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<table>
+				<tr>
+				<td> 
+			 		<input type="checkbox" name="reason4" value="TD"><label class="reason">Task Difficulty</label>
+  			 	</td>
+				<td>
+					<input type="checkbox" name="reason4" value="A"><label class="reason">Ambiguity</label>
+  			 	</td>
+				<td>
+					<input type="checkbox" name="reason4" value="G"><label class="reason">Granularity</label>
+				</td>
+				</tr>
+				<tr>		
+				<td> 
+			 		<input type="checkbox" name="reason4" value="SU"><label class="reason">Subjectivity</label>
+  			 	</td>
+				<td>
+					<input type="checkbox" name="reason4" value="IVE"><label class="reason">Insufficient Visual Evidence</label>
+  			 	</td>
+				<td>	
+					<input type="checkbox" name="reason4" value="SY"><label class="reason">Synonym</label>
+				</td>
+				</tr>
+				</table>
+				</td>
+			</tr>
+			</table>
+			</td>				
+		</tr>
+		
+		
+		
+		
+
+		</table>
+		<br/>
+		
+		<table>
+		<tr>
+		<td><p class="styleComments">Let us know your throughts: </p><td>
+		<td>
+			<textarea name="comments" id="comments" rows="10"></textarea>
+		</td>
+		</tr>
+		</table>
+		
+		
+		<br/>
+		<div class="buttonHolder">
+		<p>
+		<input type="submit" name="submitLabels" value="Submit" id="submitLabels" class="button"/>
+		</p>
+		</div>
+		</form>
+	<script src="script_checkbox.js"></script>
+	</body>
+</html>

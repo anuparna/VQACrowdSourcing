@@ -1,0 +1,99 @@
+body{
+	background-color: #F8F8F8 ;
+}
+h1{
+	color: green; 
+	font-weight: bold;
+	font-size: 50px;
+	padding: 2px;
+	margin: 1px;
+	border:2px;
+	background-color: #F8F8F8 ;
+}
+h3{
+	color: green; 
+	font-weight: bold;
+	font-size: 15px;
+	padding: 2px;
+	margin: 1px;
+	border:2px;
+	background-color: #F8F8F8 ;
+	align: center;
+}
+h4{
+	color: green; 
+	font-weight: bold;
+	font-size: 15px;
+	padding: 2px;
+	margin: 1px;
+	border:2px;
+	background-color: #F8F8F8 ;
+}
+.reason{
+	font-weight: bold;
+	width:21px;
+	height:21px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+table.style1 table.style2{
+	border: 1px solid black;
+	background-color: white;
+	align: center;
+	width:100%;
+
+}
+table.style1{
+	border: 1px solid black;
+	align: center;
+	margin-left:auto; 
+    	margin-right:auto;
+	width:90%;
+	background-color: powderblue;
+
+}
+ol{
+	background-color: #F8F8F8 ;
+	font-size:15px;
+	padding: 10px;
+	color: blue;
+	margin: 2px;
+	border: 1px;
+}
+img{
+    	height: 200px;
+    	width: 300px;
+    	background-color: powderblue;
+}
+p{
+	background-color: #F8F8F8 ;
+	font-size:15px;
+	color: blue;
+	margin: 2px;
+	border: 1px;
+}
+p.styleComments{
+	background-color: #F8F8F8 ;
+	font-size:15px;
+	color: blue;
+	margin: 2px;
+	border: 1px;
+	padding: 30px;
+}
+#comments { 
+    background-color: yellow;
+	width:300%;
+}
+.buttonHolder{ text-align: center; }
+.button {
+    background-color: powderblue;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align: center;
+}
