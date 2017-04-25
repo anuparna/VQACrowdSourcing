@@ -8,6 +8,7 @@
 	<body>
 		<form name="VQADisagreement" id="VQADisagreement" method="POST" action="http://www.mturk.com/mturk/externalSubmit">
 		<input type="hidden" id="assignmentId" name="assignmentId" value=""/>
+		<input type="hidden" id="interfaceType" name="interfaceType" value="checkbox"/>
 		<h4><u>Visual Question Answering Task</u></h4>
 		<p>There are four different images in this page.<br />
 		The question about the image appears on top and on the left are responses collected from 10 different crowd workers.<br />  
@@ -33,6 +34,8 @@
 				<td colspan="2">
 					<h3 id="q1"></h3>
 					<input type="hidden" id="img1" name="img1"/>
+					<input type="hidden" id="datasetId1" name="datasetId1"/>
+					<input type="hidden" id="entropyId1" name="entropyId1"/>
 				</td>
 			</tr>
 			<tr>
@@ -76,6 +79,8 @@
 				<td colspan="2">
 					<h3 id="q2"></h3>
 					<input type="hidden" id="img2" name="img2"/>
+					<input type="hidden" id="datasetId2" name="datasetId2"/>
+					<input type="hidden" id="entropyId2" name="entropyId2"/>
 				</td>
 			</tr>
 			<tr>
@@ -124,6 +129,8 @@
 				<td colspan="2">
 					<h3 id="q3"></h3>
 					<input type="hidden" id="img3" name="img3"/>
+					<input type="hidden" id="datasetId3" name="datasetId3"/>
+					<input type="hidden" id="entropyId3" name="entropyId3"/>
 				</td>
 			</tr>
 			<tr>
@@ -167,6 +174,8 @@
 				<td colspan="2">
 					<h3 id="q4"></h3>
 					<input type="hidden" id="img4" name="img4"/>
+					<input type="hidden" id="datasetId4" name="datasetId4"/>
+					<input type="hidden" id="entropyId4" name="entropyId4"/>
 				</td>
 			</tr>
 			<tr>
@@ -214,7 +223,7 @@
 		
 		<table>
 		<tr>
-		<td><p class="styleComments">Let us know your throughts: </p><td>
+		<td><p class="styleComments">Let us know your thoughts: </p><td>
 		<td>
 			<textarea name="comments" id="comments" rows="10"></textarea>
 		</td>
@@ -225,7 +234,7 @@
 		<br/>
 		<div class="buttonHolder">
 		<p>
-		<input type="submit" name="submitLabels" value="Submit" id="submitLabels" class="button"/>
+		<input type="submit" name="submitLabels" value="Submit HIT" id="submitLabels" class="button"/>
 		</p>
 		</div>
 		</form>

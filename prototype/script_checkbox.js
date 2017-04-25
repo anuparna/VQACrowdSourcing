@@ -31,8 +31,17 @@ function loadData(){
 	var reqStr = decodeURIComponent(gup('i'+count));
     var split_str = reqStr.split('|');
     //alert('i'+count+" Image ="+split_str[0]);
+	if(split_str[4]=='A'){
+		imgSrc = "https://cvc.ischool.utexas.edu/~anuparna/VQA/images/Disagreement_VQAAbstractImages/";
+	}
+	else if(split_str[4]=='R'){
+		imgSrc = "https://cvc.ischool.utexas.edu/~anuparna/VQA/images/Disagreement_VQARealImages/";
+	}
 	document.getElementById("i"+count).src = imgSrc+split_str[0];
 	document.getElementById("img"+count).value = split_str[0];
+	document.getElementById("datasetId"+count).value=split_str[4];
+	
+	document.getElementById("entropyId"+count).value=split_str[3];
 	if(document.getElementById("q"+count) != null){
 		//alert(escape(split_str[1]));
 		document.getElementById("q"+count).innerHTML = "<u>Question:</u>&nbsp;"+(split_str[1]).replace(/\+/g,'&nbsp;');
