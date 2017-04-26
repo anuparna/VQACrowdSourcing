@@ -3,26 +3,58 @@
 	<head>
 		<title>Visual Question Answering Task</title>
 		<link rel="stylesheet" type="text/css" href="theme.css">
-		
+		<script src="https://uniqueturker.myleott.com/lib.js" type="text/javascript"></script>	
 	</head>
 	<body>
 		<form name="VQADisagreement" id="VQADisagreement" method="POST" action="http://www.mturk.com/mturk/externalSubmit">
 		<input type="hidden" id="assignmentId" name="assignmentId" value=""/>
 		<input type="hidden" id="interfaceType" name="interfaceType" value="checkbox"/>
 		<h4><u>Visual Question Answering Task</u></h4>
-		<p>There are four different images in this page.<br />
-		The question about the image appears on top and on the left are responses collected from 10 different crowd workers.<br />  
-		These responses may or may not overlap.<br />  
-		There is comment box on the bottom of the page.  <br/>
-		We appreciate all types of feedback from you.<br/>
-<br/>
-		Please follow the steps as mentioned below.</p>
-		<ol>
-			<li>For each image, there are six options on the bottom of the image accompanied by definition in a '+' collapsible panel.</li>
-			<li>Please read the question and responses and help us select all applicable options for each image.</li>
-			<li>You must select <b>at least one option that describes the reason for disagreement among crowd workers</b> from these option  lists.</li>
-			<li>If you do not agree on any options, please select the <b>closest option</b> that describes why there is crowd disagreement.</li>
-		</ol>
+		<!-- Collapsible Instructions goes below -->
+		<div id="widnow" class="widnow">
+			<div id="title_bar" class="title_bar">
+				<input type="button" id="collapseInstructions" name="collapseInstructions" 
+					onClick="slideToggle('box','Minimize Instructions','Maximize Instructions','collapseInstructions','collapseInstructions2')" class="collapseButton" value="Minimize Instructions"></input>
+				<center><h4>Instuctions</h4><center>
+			</div>
+			<div id="box" class="box">
+				<p>There are <b>four different images</b> in this page.<br />
+				The question about the image appears on the top and on the left, are the responses collected from 10 different crowd workers.<br />  
+				These responses may or may not overlap.<br />  <br />
+				Every image is followed by <b>six reasons for disagreement among these responses.</b><br>
+				We want you to provide us with what you think are the possible reasons for the disagreement. <br/><br/>
+				Here are some examples along with the definition of every reason that we believe might have caused the disagreement.<br/></p>
+				<table class="style3">
+					<tr>
+						<td><img src="images/examples/Image_6_Task_Difficulty.PNG"/></td>
+						<td><img src="images/examples/Image_1_Ambiguity.PNG"/></td>
+						<td><img src="images/examples/Image_2_Granularity.PNG"/></td>
+					</tr>
+					<tr>
+						<td><img src="images/examples/Image_3_Subjectivity.PNG"/></td>
+						<td><img src="images/examples/Image_5_Insufficient_Visual.PNG"/></td>
+						<td><img src="images/examples/Image_4_Synonym.PNG"/></td>
+					</tr>
+				</table>
+				<p>
+				
+				<br/>
+				Please follow the steps as mentioned below.</p>
+				<ol>
+					<li>Please read the question and responses and select <b>all the applicable reasons</b> for <b>each of the four images</b>.</li>
+					<li>You must select <b>atleast one option that describes the <i>reason for disagreement</i> among crowd workers</b> from the given list of reasons.</li>
+					<li>If you do not agree with any of the given reasons, please select <b>all the closest possible reasons behind the disagreement</b>.</li>
+					<li>Let us know your thoughts in the comment box at the very bottom of the page. We appreciate your feedback.</li>
+				</ol> 
+				
+				<input type="button" id="collapseInstructions2" name="collapseInstructions2" 
+					onClick="slideToggle('box','Minimize Instructions','Maximize Instructions','collapseInstructions','collapseInstructions2')" class="collapseButton" value="Minimize Instructions"></input>
+				
+			</div>
+		</div>
+		<br/>
+		<!-- Collapsible Instructions finish here  -->	
+		
 		<table class="style1">
 		<tr>
 			<th colspan=2>Visual Question Answers</th>

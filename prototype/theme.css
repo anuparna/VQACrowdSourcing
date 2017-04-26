@@ -52,14 +52,13 @@ table.style1{
     margin-right:auto;
 	width:95%;
 	background-color: powderblue;
-
 }
 ol{
 	background-color: #F8F8F8 ;
 	font-size:15px;
-	padding: 10px;
+	padding: 20px;
 	color: blue;
-	margin: 2px;
+	margin: 5px;
 	border: 1px;
 }
 img{
@@ -89,11 +88,53 @@ p.styleComments{
 .buttonHolder{ text-align: center; }
 .button {
     background-color: powderblue;
-    border: none;
+	border:solid 2px;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     align: center;
+}
+/** Collapsible Instructions **/
+.widnow{
+    width:100%;
+    border:solid 1px;
+}
+
+.title_bar{
+    /**background: #FEFEFE;**/
+    height: 40px;
+    width: 100%;
+}
+.collapseButton{
+    border:solid 1px;
+    width: 15%;
+    height: 23px;
+    float:left;
+    cursor:pointer;
+	background-color: powderblue;
+	margin: 5px;
+}
+.box{
+    height: 25%;
+} 
+.widnow_reason{
+    width:5%;
+}
+.box_reason{
+    height: 50px;
+} 
+.title_bar_reason{
+    height: 40px;
+    width: 25%;
+}
+table.style3{
+	align: center;
+	margin-left:auto; 
+    margin-right:auto;
+	width:95%;
+}
+table.style3 td{
+	align: center;
 }

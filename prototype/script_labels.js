@@ -95,3 +95,63 @@ form.addEventListener("submit", function(event) {
 		event.preventDefault();
 	}
 });
+
+/** Collapsible Instructions script below**/
+var open = true;
+var heightChecked = false;
+var initHeight = 0;
+var intval = null;
+function slideToggle(boxId,minText,maxText,buttonId1,buttonId2) {
+    window.clearInterval(intval);
+    var box = document.getElementById(boxId);
+	if(box.offsetHeight>0){
+		open=true;
+	}
+	else{
+		open=false;
+	}
+    if(!heightChecked) {
+        initHeight = box.offsetHeight;
+        heightChecked = true;
+    }
+	//alert(initHeight);
+    if(open) {
+		//alert("on close");
+        var h = initHeight;
+        open = false;
+        intval = setInterval(function(){
+			h--;
+			box.style.height = h + 'px';
+			if(h <= 0)
+				window.clearInterval(intval);
+			}, 1
+		);
+		document.getElementById(buttonId1).value=maxText;
+		document.getElementById(buttonId2).value=maxText;
+		document.getElementById(boxId).style.visibility='hidden';
+    }
+    else {
+        var h = 0;
+        open = true;
+	    intval = setInterval(function(){
+			h++;
+			box.style.height = h + 'px';
+			//alert(h);
+			if(h >= initHeight){
+				window.clearInterval(intval);				
+			}
+		  }, 1
+		);
+		document.getElementById(buttonId1).value=minText;
+		document.getElementById(buttonId2).value=minText;
+		document.getElementById(boxId).style.visibility='visible';
+    }
+}
+(function(){
+   var ut_id = "89db89925ab3a3b01b67798eb6a89955";
+   //alert(ut_id);
+   if (UTWorkerLimitReached(ut_id)) {
+       document.getElementById('VQADisagreement').style.display = 'none';
+       document.getElementsByTagName('body')[0].innerHTML = "<p>Thank you for your participation.<br/>You have already completed the maximum number of HITs allowed by this requester. <br/>Please click <b>'Return HIT'</b>.</p>";
+   }
+})();
