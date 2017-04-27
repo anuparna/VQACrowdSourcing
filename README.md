@@ -14,4 +14,6 @@ A crowd-sourcing experiment was conducted on **Amazon Mechanical Turk (AMT)** wi
 
 `\data\images`: The image files from all 3 datasets - Total of 144 images, 48 from each dataset.
 
-`\prototype\*.*`: Contains HTML, CSS and Javascript\Jquery files for interface display
+`\prototype\*.*`: Contains HTML, CSS and Javascript\Jquery files for interface display.
+
+All code was executed using Amazon Mechanical Turk Command Line Tools (CLT).
