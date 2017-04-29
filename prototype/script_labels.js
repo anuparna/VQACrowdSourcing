@@ -21,7 +21,10 @@ if (gup('assignmentId') == "ASSIGNMENT_ID_NOT_AVAILABLE")
 } else {
   var form = document.getElementById('VQADisagreement');
   if (document.referrer && (document.referrer.indexOf('workersandbox') != -1) ) {
+        // Form action for sandbox
         form.action = "https://workersandbox.mturk.com/mturk/externalSubmit";
+		// form action for AMT prod
+		//form.action = "https://www.mturk.com/mturk/externalSubmit";
   }
 }
 
@@ -147,11 +150,17 @@ function slideToggle(boxId,minText,maxText,buttonId1,buttonId2) {
 		document.getElementById(boxId).style.visibility='visible';
     }
 }
+function toggle(it) {
+  if (it.width == 200)
+    {it.width = 600;}
+  else
+    {it.width = 200;}
+}
 (function(){
    var ut_id = "89db89925ab3a3b01b67798eb6a89955";
    //alert(ut_id);
    if (UTWorkerLimitReached(ut_id)) {
-       document.getElementById('VQADisagreement').style.display = 'none';
-       document.getElementsByTagName('body')[0].innerHTML = "<p>Thank you for your participation.<br/>You have already completed the maximum number of HITs allowed by this requester. <br/>Please click <b>'Return HIT'</b>.</p>";
+       //document.getElementById('VQADisagreement').style.display = 'none';
+       //document.getElementsByTagName('body')[0].innerHTML = "<p>Thank you for your participation.<br/>You have already completed the maximum number of HITs allowed by this requester. <br/>Please click <b>'Return HIT'</b>.</p>";
    }
 })();

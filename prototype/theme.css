@@ -53,7 +53,7 @@ table.style1{
 	width:95%;
 	background-color: powderblue;
 }
-ol{
+ol,ul{
 	background-color: #F8F8F8 ;
 	font-size:15px;
 	padding: 20px;
@@ -137,4 +137,12 @@ table.style3{
 }
 table.style3 td{
 	align: center;
+}
+
+.example{
+	transition: -webkit-transform 0.25s ease;
+}
+
+.example:active{
+	-webkit-transform: scale(2);
 }

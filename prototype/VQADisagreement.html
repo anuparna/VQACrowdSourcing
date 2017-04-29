@@ -6,7 +6,7 @@
 		<script src="https://uniqueturker.myleott.com/lib.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<form name="VQADisagreement" id="VQADisagreement" method="POST" action="http://www.mturk.com/mturk/externalSubmit">
+		<form name="VQADisagreement" id="VQADisagreement" method="POST" action="https://www.mturk.com/mturk/externalSubmit">
 		<input type="hidden" id="assignmentId" name="assignmentId" value=""/>
 		<input type="hidden" id="interfaceType" name="interfaceType" value="radio"/>
 		<h4><u>Visual Question Answering Task</u></h4>
@@ -15,7 +15,7 @@
 			<div id="title_bar" class="title_bar">
 				<input type="button" id="collapseInstructions" name="collapseInstructions" 
 					onClick="slideToggle('box','Minimize Instructions','Maximize Instructions','collapseInstructions','collapseInstructions2')" class="collapseButton" value="Minimize Instructions"></input>
-				<center><h4>Instuctions</h4><center>
+				<center><h4>Instructions</h4><center>
 			</div>
 			<div id="box" class="box">
 				<p>There are <b>four different images</b> in this page.<br />
@@ -24,16 +24,25 @@
 				Every image is followed by <b>six reasons for disagreement among these responses.</b><br>
 				We want you to provide us with what you think is the best possible reason for the disagreement. <br/><br/>
 				Here are some examples along with the definition of every reason that we believe might have caused the disagreement.<br/></p>
+				<ul>
+					<li><i><b>Task Difficulty</b></i>: The visual questions require domain expertise to answer.</li>
+					<li><i><b>Ambiguity</b></i>: Unclear images or questions leading to different interpretations.</li>
+					<li><i><b>Granularity</b></i>: The resolution, level or scale of the image causing difference in answers.</li>
+					<li><i><b>Subjectivity</b></i>: Opinion related questions can have different answers.</li>
+					<li><i><b>Insufficient Visual Evidence</b></i>: Absence of a sharp and clear image causing different answers.</li>
+					<li><i><b>Synonym</b></i>: All answers capture more or less the same connotation of the visual question.</li>			
+				</ul>
+				<p>You may click on the images below and keep your mouse pressed for an enlarged view of the images.</p>
 				<table class="style3">
 					<tr>
-						<td><img src="images/examples/Image_6_Task_Difficulty.PNG"/></td>
-						<td><img src="images/examples/Image_1_Ambiguity.PNG"/></td>
-						<td><img src="images/examples/Image_2_Granularity.PNG"/></td>
+						<td><img class="example" src="images/examples/Image_6_Task_Difficulty.PNG"/></td>
+						<td><img class="example"  src="images/examples/Image_1_Ambiguity.PNG"/></td>
+						<td><img class="example"  src="images/examples/Image_2_Granularity.PNG"/></td>
 					</tr>
 					<tr>
-						<td><img src="images/examples/Image_3_Subjectivity.PNG"/></td>
-						<td><img src="images/examples/Image_5_Insufficient_Visual.PNG"/></td>
-						<td><img src="images/examples/Image_4_Synonym.PNG"/></td>
+						<td><img class="example"  src="images/examples/Image_3_Subjectivity.PNG"/></td>
+						<td><img class="example"  src="images/examples/Image_5_Insufficient_Visual.PNG"/></td>
+						<td><img class="example"  src="images/examples/Image_4_Synonym.PNG"/></td>
 					</tr>
 				</table>
 				<p>

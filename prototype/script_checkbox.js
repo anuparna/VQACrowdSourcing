@@ -21,7 +21,10 @@ if (gup('assignmentId') == "ASSIGNMENT_ID_NOT_AVAILABLE")
 } else {
   var form = document.getElementById('VQADisagreement');
   if (document.referrer && (document.referrer.indexOf('workersandbox') != -1) ) {
+		// Form action for sandbox
         form.action = "https://workersandbox.mturk.com/mturk/externalSubmit";
+		// form action for AMT prod
+		//form.action = "https://www.mturk.com/mturk/externalSubmit";
   }
 }
 
