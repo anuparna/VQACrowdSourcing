@@ -20,6 +20,6 @@ All code was executed using Amazon Mechanical Turk Command Line Tools (CLT).
 
 ## Workshop Presentation
 A. Banerjee, S. Ojha, D. Gurari. "Let’s Agree to Disagree: A Meta-Analysis of Disagreement Among Crowdworkers During Visual Question Answering." <i>Workshop on Human Computation for Image and Video Analysis at AAAI Conference on Human Computation & Crowdsourcing (HCOMP GroupSight), Quebec City, Canada, October, 2017.</i><br/>
-<a href="https://raw.githubusercontent.com/anuparna/Gaussian_Process/master/doc/Gaussian%20Processes.pdf">Poster</a><br/>
-<a href="https://raw.githubusercontent.com/anuparna/Gaussian_Process/master/doc/Gaussian%20Processes.pdf">Presentation</a>
+<a href="https://raw.githubusercontent.com/anuparna/VQACrowdSourcing/master/presentation/HCOMP_2017_Poster-Lets_agree_to_disagree.pdf">Poster</a><br/>
+<a href="https://raw.githubusercontent.com/anuparna/VQACrowdSourcing/master/presentation/HCOMP%202017%20-%20Lets%20agree%20to%20disagree.pptx">Presentation</a>
 
