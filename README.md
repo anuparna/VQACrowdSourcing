@@ -17,3 +17,9 @@ A crowd-sourcing experiment was conducted on **Amazon Mechanical Turk (AMT)** wi
 `\prototype\*.*`: Contains HTML, CSS and Javascript\Jquery files for interface display.
 
 All code was executed using Amazon Mechanical Turk Command Line Tools (CLT).
+
+## Workshop Presentation
+A. Banerjee, S. Ojha, D. Gurari. "Let’s Agree to Disagree: A Meta-Analysis of Disagreement Among Crowdworkers During Visual Question Answering." <i>Workshop on Human Computation for Image and Video Analysis at AAAI Conference on Human Computation & Crowdsourcing (HCOMP GroupSight), Quebec City, Canada, October, 2017.</i><br/>
+<a href="https://raw.githubusercontent.com/anuparna/Gaussian_Process/master/doc/Gaussian%20Processes.pdf">Poster</a><br/>
+<a href="https://raw.githubusercontent.com/anuparna/Gaussian_Process/master/doc/Gaussian%20Processes.pdf">Presentation</a>
+
